@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* CSS stilmallen "Style" har egenskaper för samtliga generiska element på alla sidor samt generiska media quereies. Sedan följer även specifika egenskaper för template sidan (förstasidan)*/
+
+body {
+    /*body prop. generiskt*/
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px;
+    width:  1200px;
+    position: center;
+    font-family: 'Alegreya', serif;
+} 
+
+#fungerar {
+    /*logga i header*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    width: 30%;    
+}
+
+header {
+    /*header med äppelbakgrund*/
+    background: url("pics/apple2.jpg");
+    height: 100px;
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#nav ul {
+    /*ul preferenser för nav meny */
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    font-size: 1.4em;
+}
+
+#nav li {
+    /*list preferenser för nav meny */
+    display: inline;
+}
+
+#nav a {
+    /*länkarna */
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#nav a:visited  {
+    color: DimGrey;
+}
+
+#nav a:link {
+    color: DimGrey;
+}
+#nav a:active {
+    color: Firebrick;
+
+}
+
+#nav a:hover  {
+    color: FireBrick;
+}
+  
+#kol1 {
+    /*förstasidan - specifika egenskaper för huvudfält - kolumn1 vänster */
+
+    background-image: url("pics/chalk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: auto;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    margin: 0px auto;
+    padding: 30px;
+    margin-right: 2px;
+    float: left;
+    border: none;
+}
+
+#kol1 ul {
+    /* lista med länkar till "sortiment" för lokal navigering nedan*/
+    list-style-type: none;
+}
+
+#kol1 a {
+    text-decoration: none;
+}    
+
+#kol1 a:visited {
+    color: white;
+}
+#kol1 a:link {
+    color: white;
+}
+#kol1 a:active {
+    color: black;
+}
+
+#kol1 a:hover  {
+    color: FireBrick;
+}
+
+#appelmust {
+    /* specifika egenskaper för att ge padding till text*/
+    padding-bottom: 15px;   
+}
+
+#marmelader {
+    padding-bottom: 15px;   
+}
+
+#smutti {
+    padding-bottom: 15px;   
+}
+
+
+#kol2 {
+    /* egenskaper för kolumn till höger */
+    float: right;
+    width: 67%;
+    border: dotted;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: left;
+    color: DimGrey;
+    font-family: 'Alegreya', serif;
+    font-size: 1.2em;
+}
+
+#kol2 h2 {
+    font-size: 2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin-left: 10px;
+}
+
+#kol2 p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.columns {
+    /*kolumner jämnsides*/
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner {
+    /* banner i botten*/
+    margin: 0px auto;
+}
+
+#hem1 {
+    /*bild nr 1*/
+    float: left;
+    height: auto;
+    width: 33.75%;
+    margin-bottom: 20px;
+}
+
+#hem2 {
+    /*bild nr 2*/
+    float: left;
+    height: auto;
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+#hem3 {
+    /*bild nr 3*/
+    float: left;
+    height: auto;
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+
+
+.botten  {
+    /*footer*/
+    text-align: center;
+    max-width: 500px;
+    background-color: WhiteSmoke;
+    color: black;
+    font-size: 1em;
+    margin: 0px auto;
+    clear: both;
+    padding: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    height: 80px;
+}
+
+   
+/* media query för 600px nedan för samtliga sidors kolumner  */
+  
+
+@media only screen and (max-width: 600px) {
+    
+   /*generella preferenser*/
+    h1 {
+        font-size: 80%;
+    }
+
+    h2 {
+        font-size: 50%;
+    }
+    
+    h3 {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    p {
+        font-size: 80%;
+    }
+
+    body {
+        font-size: 70%;
+        width: auto;
+    }
+
+    li {
+        font-size: 70%;
+    }
+    
+        header {
+        /*justerar headern för att ge plats för navigering till vänster*/
+        display: block;
+        margin: 0px;
+        margin-left: 80px;
+        height: 170px; 
+    }
+
+    #nav {
+        /* gör om global meny till flytande på vänster sida*/
+        float: left;
+        display: block;
+        width: 40px;
+        margin-right: 80px;
+        margin-top: 20px;
+    }
+    
+    #nav li {
+        font-size: 60%;
+    }
+
+    #nav ul li {
+        display: block;
+        margin: 0px;
+        padding: 0px;		
+    }
+
+    #nav ul {
+        text-align: center;
+    }
+
+    #nav a {
+        display: block;
+    }
+    
+    .columns  {
+    /* specifikt för kolumner */
+        display: block;
+    }
+    
+    #kol1 {
+        /*gör om lokal navigering till inline istället för block nedan samt definerar om färger på länkar*/
+        width: 100%;
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+        float: none;
+        background: none;       
+    }
+    
+    #kol1 a {
+        display: inline;
+        width: auto;
+        padding: 1px;       
+    }
+    
+    #kol1 li {
+        display: inline;
+        margin: 0 auto;
+        padding: 2px;
+        font-size: 70%;
+    }
+    
+   
+    
+    #kol1 a:visited  {
+         /*byter färg vid resize*/
+        color: grey;
+    }
+    
+    #kol1 a:link  {
+         /*byter färg vid resize*/
+        color: grey;
+    }
+    
+    #kol1 a:active {
+         /*byter färg vid resize*/
+        color: black;
+    }
+
+    #kol1 a:hover  {
+         /*byter färg vid resize*/
+        color: FireBrick;  
+    }
+    
+    #kol2 {
+        /*ger kolumn 2 nya egenskaper för ny storlek */
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 0px auto;
+        padding-right: 3px;
+        padding-left: 3px;
+        float: none;
+    }
+
+    #kol2 h2 {
+        text-align: center;
+    }
+    
+    #kol2 p {
+        font-size: 100%;
+    }
+
+}
+

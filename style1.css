@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+
+
+/*vänster kolumn*/
+
+#kol1 {
+    
+width: 67%;
+opacity: 0.6;
+}
+
+.sort   {
+    /*definerar de olika sorterna*/
+    margin: 0px auto;
+    padding: 20px;
+    text-align: left;
+    Background-color: whiteSmoke;
+    margin-bottom: 20px;
+    display: inline-block;
+
+
+}
+
+
+.sort ol  {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.sort li {
+    /*definerar beskrivningen av sorterna */
+    padding: 3px;
+    margin-left: 20px;
+    font-family: 'Alegreya', serif;
+    padding-top: 0px;
+    font-size: 0.8em;
+}
+
+
+.sort h3 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: black;
+    font-size: 1em;
+}
+
+
+
+/*  höger kolumn */
+
+#kol2 {
+width: 33%;
+font-size: 1.2em;
+}
+
+/*bilderna på höger sida*/
+
+#baginboxbild {
+    max-width: 100px;
+}
+
+#marmeladbild {
+    max-width: 100px;
+}
+
+#smoothiebild {
+    max-width: 100px;
+}
+
+#tre {
+    text-decoration: none;
+    color: FireBrick;
+}
+
+/*media query specifikt för "sortiment" vid 600px */
+
+@media only screen and (max-width: 600px) {
+    
+
+    .columns  {
+        display: block;
+    }
+    
+    #kol1 {
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 0px auto;
+        padding: 0px;
+        float: none;
+        background: none;       
+    }
+  
+    .sort h3 {
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    
+    .sort li {
+        margin: 0px;
+        padding: 0px;     
+    }
+    
+    .sort ol {
+         white-space: pre-line;   
+    }
+    
+    #kol2 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+        padding-top: 20px;
+        float: none;
+    }
+    
+    #kol2 p {
+        font-size: 100%;
+    }
+}   
+
+
+
+
+
+
+
+  
+ 
+    

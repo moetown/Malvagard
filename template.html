@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Uppgift2</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya%7cAlegreya+Sans+SC%7cAlegreya+Sans:900%7cFrancois+One%7cJacques+Francois+Shadow" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<a href="template.html">
+		<img src="pics/malvagard.png" id="fungerar"  alt="malva gård logga">
+	</a> <!--logga global-->
+	<div id="nav"> 
+		<ul>
+			<li><a href="template.html">Hem</a></li>
+			<li><a href="nummer1.html">Sortiment</a></li>
+			<li><a href="nummer2.html">Gårdsbutiken</a></li>
+			<li><a href="nummer3.html">Kontakt</a></li>
+		</ul>
+	</div> <!-- end of global meny - alla sidor-->	
+    <header>
+    </header><!-- end of header - läggs in bildbakgrund med css -->
+    <main> <!-- Specifikt för förstasidan "hem" i main elementet -->
+        <div class="columns">
+			<div id="kol1">
+				 <ul>
+					<li id="appelmust"><a href="nummer1.html">Äppelmust</a></li>
+					<li id="marmelader"><a href="nummer1.html">Marmelader</a></li>
+					<li id="smutti"><a href="nummer1.html">Smutti</a></li>		
+				</ul>
+			</div> <!-- end kolumn 1 vänster -->
+			
+			<div id="kol2">
+				<h2>Välkommen till Malva gård</h2>
+				<p>Äpppelmusteriet vid Åsnens Strand. I vårt egenproducerade sortiment hittar ni äppelmust, marmerlader och Småländsk Smoothie - "Smutti" - 
+				med frukt och bär från vår egen odling. Vi är helt fria från besprutningsmedel i vår odlingsprocess och har KRAV-certifiering på gång.  
+				<h2>Aktiviteter</h2>
+				<p>Denna vecka hittar ni oss på skördemarknad i Gårdsby. </p>
+			</div> <!--end kolumn 2 höger -->
+        </div>	<!-- end columns-->
+		<div class="banner">
+			<img src="pics/first1.jpg" id="hem1" alt="hem1">
+			<img src="pics/first2.jpg" id="hem2" alt="hem2">
+			<img src="pics/first3.jpg" id="hem3" alt="hem3">
+		</div> <!--end bildbanner-->
+    </main>	
+    <footer> <!-- samma på alla sidor-->
+		<div class="botten">
+		<p>Malva gård | Karatorp Lillegård 6 ... | tel: xxxxx | kontakt@malvagard.se</p>
+		<p>Öppettider: Lördag-söndag 13.00-16.00</p>
+		<p>©Malvagård 2017 | M. Parsland </p>
+		</div>
+    </footer><!--end botten footer-->
+</body>
+</html>
