@@ -11,41 +11,39 @@ width: 67%;
 opacity: 0.6;
 }
 
-.sort   {
+.sort {
     /*definerar de olika sorterna*/
-    margin: 0px auto;
+    margin: auto;
     padding: 20px;
+    font-size: 20px;
     text-align: left;
     Background-color: whiteSmoke;
     margin-bottom: 20px;
-    display: inline-block;
 
 
 }
-
 
 .sort ol  {
     list-style-type: none;
     margin: 5px;
     padding: 5px;
+
 }
 
-
-
-.sort li {
-    /*definerar beskrivningen av sorterna */
+.beskriv {
+    /*definerar beskrivningen av sorterna (p) */
     padding: 3px;
     margin-left: 20px;
     font-family: 'Alegreya', serif;
+    font-size: 20px;
     padding-top: 0px;
-    font-size: 0.8em;
 }
 
 
-.sort h3 {
+.definera {
     font-family: 'Alegreya Sans SC', sans-serif;
     color: black;
-    font-size: 1em;
+    font-size: 25px;
 }
 
 
@@ -54,33 +52,28 @@ opacity: 0.6;
 
 #kol2 {
 width: 33%;
-font-size: 1.2em;
-margin: 0px auto;
-text-align: center;
+font-size: 18px;
 }
 
 /*bilderna på höger sida*/
 
-#baginboxbild {
-    max-width: 100px;
+#products {
+    max-width: 300px;
 }
 
-#marmeladbild {
-    max-width: 100px;
+#butik {
+    max-width: 300px;
 }
 
-#smoothiebild {
-    max-width: 100px;
-}
 
 #tre {
     text-decoration: none;
     color: FireBrick;
 }
 
-/*media query specifikt för "sortiment" vid 600px */
+/*media queries specifikt för "sortiment" */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 470px) {
     
 
     .columns  {
@@ -90,26 +83,11 @@ text-align: center;
     #kol1 {
         width: 100%;
         display: block;
-        text-align: left;
+        text-align: center;
         margin: 0px auto;
         padding: 0px;
         float: none;
         background: none;       
-    }
-  
-    .sort h3 {
-        margin: 0px;
-        padding-top: 10px;
-        padding-bottom: 0px;
-    }
-    
-    .sort li {
-        margin: 0px;
-        padding: 0px;     
-    }
-    
-    .sort ol {
-         white-space: pre-line;   
     }
     
     #kol2 {
@@ -120,10 +98,6 @@ text-align: center;
         padding: 0px;
         padding-top: 20px;
         float: none;
-    }
-    
-    #kol2 p {
-        font-size: 100%;
     }
 }   
 

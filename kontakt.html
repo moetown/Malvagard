@@ -11,14 +11,14 @@
 </head>
 <body>
 	<a href="index.html">
-		<img src="pics/malvagard.png" id="fungerar"  alt="malva gård logga">
+		<img src="pics/malvagardfarg.png" id="fungerar"  alt="malva gård logga">
 	</a> <!--logga global-->
-	<div id="nav">
+	<div id="nav"> 
 		<ul>
 			<li><a href="index.html">Hem</a></li>
-			<li><a href="nummer1.html">Sortiment</a></li>
-			<li><a href="nummer2.html">Gårdsbutiken</a></li>
-			<li><a href="nummer3.html">Kontakt</a></li>
+			<li><a href="sortiment.html">Sortiment</a></li>
+			<li><a href="gardsbutik.html">Gårdsbutiken</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
 		</ul> 
 		</div> <!-- end of global meny -->  
     <header>
@@ -27,7 +27,7 @@
         <div class="columns"> 
 			<div id="kol1">
 				<h2 id="toppen">Få din order hem till dig!</h2>
-				<h3 id="para1">Vi levererar till Växjö med omnejd på Torsdagseftermiddagar och beställningar över 300kr sker utan fraktkostnad.</h3>
+				<p id="para1">Vi levererar till Växjö med omnejd på Torsdagseftermiddagar och beställningar över 300kr sker utan fraktkostnad.</p>
 				<h2 id="botten">Gör så här för att beställa:</h2>
 				<p id="para2">Skriv ett epostmeddelande i formuläret på sidan eller till kontakt@malvagard.se med samma kontaktuppgifter.
 				Vi skickar ett epostmeddelande som bekräftar din beställning och hur dags vi beräknar att vi kommer med leveransen. 
@@ -35,7 +35,7 @@
 				</p>
 			</div> <!--end kol1-->
 			<div id="kol2">
-				<form name="kontakt" id="kontakt" method="post" action="kontakt@malvagard.se">
+				<form name="kontakt" id="kontakt" method="post" action="kontaktform.php">
 					<fieldset>
 						<legend>Kontakta oss:</legend>
 						<label for="namn">Namn:</label> <br />
@@ -47,18 +47,28 @@
 						<label for="meddelande">Meddelande:</label> <br />
 						<textarea name="meddelande" id="meddelande" cols="30" rows="5"></textarea> <br />
 						<input type="submit" name="skicka" id="skicka" value="Skicka meddelandet" />
-					</fieldset> 
+					</fieldset>
+				
 				</form><!--end kontaktformulär -->
+				
+				
 			</div> <!--end kol2-->
 		</div> <!-- end columns -->
 		<div id="maps">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d70057.87619691755!2d14.720048185820266!3d56.58982978446145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f608634942ae514!2zTWFsdmEgR8OlcmQgVmVtYm_Dtg!5e0!3m2!1ssv!2sse!4v1489722293745"  allowfullscreen>
 				</iframe>
+		</div>		
+		
+		<div id="instagram">	
+			<a href='https://www.instagram.com/malva_gard'>
+				<p>Instagram</p>
+				<img src='https://scontent-iad3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/17662396_1671774639504374_4621700975923560448_n.jpg' width='200' height='200' /><br />
+			</a>
 		</div>
 		<div class="banner">
-			<img src="pics/first1.jpg" id="hem1" alt="hem1">
-			<img src="pics/first2.jpg" id="hem2" alt="hem2">
-			<img src="pics/first3.jpg" id="hem3" alt="hem3">
+			<img src="pics/bjorn.jpg" id="hem1" alt="hem1">
+			<img src="pics/MyranDexter.jpg" id="hem2" alt="hem2">
+			<img src="pics/apple2.jpg" id="hem3" alt="hem3">
 		</div> <!--end bildbanner-->
     </main>
     <footer> <!-- samma på alla sidor-->
